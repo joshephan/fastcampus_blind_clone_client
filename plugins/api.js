@@ -10,9 +10,10 @@ export default function({ $axios }, inject) {
 
     // Set baseURL to something different
     api.setBaseURL(
-      process.env.NODE_ENV === "production"
-        ? "http://fastcampusblindclone-env.eba-p687fdja.us-east-1.elasticbeanstalk.com/"
-        : "http://localhost:8080"
+      // process.env.NODE_ENV === "production"
+      //   ? "http://fastcampusblindclone-env.eba-p687fdja.us-east-1.elasticbeanstalk.com/"
+      //   : "http://localhost:8080"
+      "http://localhost:8080"
     );
 
     // Inject to context as $api
